@@ -9,10 +9,14 @@
   display: flex;
 }
 
-div {
+/* div {
   border: 2px solid red;
-}
+} */
 
 img {
   width: 100%;
+}
+
+body {
+  background-color: lightgrey;
 }
