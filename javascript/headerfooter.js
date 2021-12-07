@@ -83,7 +83,7 @@ navItem2.appendChild(toAppointment); //logoet er child til navItem2
 
 //a
 const toPrices = document.createElement("a"); //genererer a i html
-toPrices.setAttribute("href", "index.html"); //a får attribut href="index.html"
+toPrices.setAttribute("href", "priser.html"); //a får attribut href="priser.html"
 toPrices.setAttribute("class", "nav-link"); //logoet får attribut class="nav-link"
 toPrices.textContent = "Behandling & priser"; //tekst
 navItem3.appendChild(toPrices); //logoet er child til navItem3
@@ -93,7 +93,7 @@ navItem3.appendChild(toPrices); //logoet er child til navItem3
 
 //a
 const toAboutUs = document.createElement("a"); //genererer a i html
-toAboutUs.setAttribute("href", "tidsbestilling.html"); //a får attribut href="tidsbestilling.html"
+toAboutUs.setAttribute("href", "om_os.html"); //a får attribut href="om_os.html"
 toAboutUs.setAttribute("class", "nav-link"); //logoet får attribut class="nav-link"
 toAboutUs.textContent = "Om os"; //tekst
 navItem4.appendChild(toAboutUs); //logoet er child til navItem4
