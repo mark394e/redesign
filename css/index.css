@@ -1,0 +1,30 @@
+/***Velkommen / Second section***/
+#second_section {
+  margin-top: 10%;
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
+.section_wrapper h3 {
+  margin-bottom: 5%;
+}
+
+.section_wrapper h4 {
+  margin-bottom: 3%;
+}
+
+p {
+  margin-bottom: 3%;
+}
+
+@media (min-width: 1000px) {
+  /***Velkommen / First section***/
+
+  /***Velkommen / Second section***/
+  #second_section .section_wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5%;
+  }
+
+  /***Velkommen / Third section***/
