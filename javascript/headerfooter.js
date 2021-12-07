@@ -40,22 +40,22 @@ navBar.appendChild(burgerMenu); //burgermenuen er child til nav
 
 //li[0]
 const navItem1 = document.createElement("li"); //genererer li i html
-navItem1.setAttribute("class", "nav-logo"); //li får attribut class="nav-item"
+navItem1.setAttribute("class", "nav-item"); //li får attribut class="nav-item"
 navMenu.appendChild(navItem1); //li er child til ul
 
 //li[1]
 const navItem2 = document.createElement("li"); //genererer li i html
-navItem2.setAttribute("class", "nav-logo"); //li får attribut class="nav-item"
+navItem2.setAttribute("class", "nav-item"); //li får attribut class="nav-item"
 navMenu.appendChild(navItem2); //li er child til ul
 
 //li[2]
 const navItem3 = document.createElement("li"); //genererer li i html
-navItem3.setAttribute("class", "nav-logo"); //li får attribut class="nav-item"
+navItem3.setAttribute("class", "nav-item"); //li får attribut class="nav-item"
 navMenu.appendChild(navItem3); //li er child til ul
 
 //li[3]
 const navItem4 = document.createElement("li"); //genererer li i html
-navItem4.setAttribute("class", "nav-logo"); //li får attribut class="nav-item"
+navItem4.setAttribute("class", "nav-item"); //li får attribut class="nav-item"
 navMenu.appendChild(navItem4); //li er child til ul
 
 /* html > body > header > nav > ul > li[0] */
