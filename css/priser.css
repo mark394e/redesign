@@ -1,4 +1,4 @@
-
+/* grid for priser */
 .Diagnostik,
 .Forebyggelse,
 .Rodbehandling,
@@ -13,7 +13,37 @@
 {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
+    /* grid-template-rows: 1fr 1fr 1fr 1fr; */
+    justify-content: center;
+    gap: 10px;
+    margin: 20px;
+}
+
+/* grid for behandlinger */
+.Smertefri,
+.Krone_Bro,
+.Delprotese,
+.Helprotese,
+.Implantat,
+.Kosmetik,
+.Blegning2,
+.Parodontose2,
+.Tandsmykker {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    /* grid-template-rows: 1fr 1fr 1fr 1fr; */
+    justify-content: center;
+    gap: 10px;
+    margin: 20px;
+}
+
+/* grid for info */
+.behandling_pris,
+.Betaling,
+.Studerende,
+.behandlinger{
+    display: grid;
+    grid-template-columns: 1fr;
     justify-content: center;
     gap: 10px;
     margin: 20px;
@@ -23,6 +53,7 @@ div {
     border: 2px solid rgb(255, 0, 128);
   }
 
+/* grid placering for priser */
 .Diagnostik{
     display: grid;
     grid-column: 1/2;
@@ -87,4 +118,51 @@ div {
     display: grid;
     grid-column: 2/3;
     grid-row: 4/5;
+}
+
+/* grid placering for behandlinger */
+.Smertefri{
+    display: grid;
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+.Krone_Bro{
+    display: grid;
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+.Delprotese{
+    display: grid;
+    grid-column: 3/4;
+    grid-row: 1/2;
+}
+.Helprotese{
+    display: grid;
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+.Implantat{
+    display: grid;
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+.Kosmetik{
+    display: grid;
+    grid-column: 3/4;
+    grid-row: 2/3;
+}
+.Blegning2{
+    display: grid;
+    grid-column: 1/2;
+    grid-row: 3/4;
+}
+.Parodontose2{
+    display: grid;
+    grid-column: 2/3;
+    grid-row: 3/4;
+}
+.Tandsmykker{
+    display: grid;
+    grid-column: 3/4;
+    grid-row: 3/4;
 }
