@@ -3,3 +3,15 @@
   margin: 0;
   padding: 0;
 }
+
+/*- maxwidth på siden samt luftrum på højre- og venstreside når vinduestørrelsen er større end 1200px
+    6px luftrum på højre- og venstreside når man er på mobil -*/
+body {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1200px) auto;
+}
+main {
+  grid-column: 2/3;
+  padding-inline: clamp(12px, 6px + 1.5vw, 24px);
+}
+/*-  -*/
