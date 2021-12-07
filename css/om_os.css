@@ -1,0 +1,14 @@
+.kontakt,
+.lokation,
+.review {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.personale {
+  display: flex;
+}
+
+div {
+  border: 2px solid red;
+}
