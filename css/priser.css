@@ -7,23 +7,84 @@
 .Tandimplantater,
 .Parodontose,
 .Protese,
-.Parodontose,
 .Kronebehandling,
 .Blegning,
 .Bidefunktioner
 {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    justify-content: center;
+    gap: 10px;
+    margin: 20px;
 }
 
 div {
-    border: 2px solid red;
+    border: 2px solid rgb(255, 0, 128);
   }
 
 .Diagnostik{
-    grid-column: 1;
+    display: grid;
+    grid-column: 1/2;
+    grid-row: 1/2;
 }
 
 .Forebyggelse{
-    grid-column: 1;
+    display: grid;
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+
+.Rodbehandling{
+    display: grid;
+    grid-column: 3/4;
+    grid-row: 1/2;
+}
+
+.fyldninger{
+    display: grid;
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+
+.Fjernelse{
+    display: grid;
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+
+.Tandimplantater{
+    display: grid;
+    grid-column: 3/4;
+    grid-row: 2/3;
+}
+
+.Parodontose{
+    display: grid;
+    grid-column: 1/2;
+    grid-row: 3/4;
+}
+
+.Protese{
+    display: grid;
+    grid-column: 2/3;
+    grid-row: 3/4;
+}
+
+.Kronebehandling{
+    display: grid;
+    grid-column: 3/4;
+    grid-row: 3/4;
+}
+
+.Blegning{
+    display: grid;
+    grid-column: 1/2;
+    grid-row: 4/5;
+}
+
+.Bidefunktioner{
+    display: grid;
+    grid-column: 2/3;
+    grid-row: 4/5;
 }
