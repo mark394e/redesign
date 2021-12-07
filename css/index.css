@@ -1,8 +1,20 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  width: 100%;
+}
+
+/***Velkommen / First section***/
+
 /***Velkommen / Second section***/
 #second_section {
   margin-top: 10%;
-  margin-left: 20%;
-  margin-right: 20%;
+  margin-left: 15%;
+  margin-right: 15%;
 }
 
 .section_wrapper h3 {
@@ -19,6 +31,18 @@ p {
 
 @media (min-width: 1000px) {
   /***Velkommen / First section***/
+.banner {
+  position: relative;
+}
+
+.forside_text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  background-color: rgba(126, 158, 228, 0.685);
+}
 
   /***Velkommen / Second section***/
   #second_section .section_wrapper {
