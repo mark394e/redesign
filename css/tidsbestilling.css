@@ -1,0 +1,118 @@
+body {
+  /* midlertidigt background-color */
+  background-color: lightslategray;
+}
+
+.center {
+  padding-block: 3rem;
+  width: 100%;
+  text-align: center;
+}
+
+section {
+  margin-bottom: 4rem;
+}
+
+.double_columns {
+  display: flex;
+  flex-flow: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  column-gap: 3.75rem;
+}
+.double_columns > * {
+  flex-grow: 1;
+  flex: 45%;
+}
+
+.flex_item {
+  min-height: 9rem;
+  padding-top: 2rem;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+input[type="radio"] {
+  transform: scale(150%) translateY(-1px);
+  margin-right: 0.5rem;
+}
+
+input[type="checkbox"] {
+  transform: scale(150%) translateY(-1px);
+  margin-right: 0.5rem;
+}
+
+#select_day {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+}
+
+#patient_type,
+#select_day,
+#reply_type {
+  margin-top: 1.5rem;
+}
+form > div > input {
+  margin-bottom: 1.5rem;
+}
+
+.inline {
+  display: inline;
+}
+p.inline {
+  color: black;
+  font-size: 1rem;
+}
+
+#select_time {
+  width: 55%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+#comment_box {
+  font-family: hero-new, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: black;
+  resize: none;
+  width: 100%;
+  height: 8rem;
+}
+
+#submit_button {
+  width: 7rem;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  background-color: var(--color-1);
+  border-radius: 8px;
+  transition: 0.15s;
+  cursor: pointer;
+}
+
+#submit_button:hover {
+  background-color: var(--color-3);
+}
+
+#submit_button > p {
+  color: white;
+  font-size: 1rem;
+  text-align: center;
+}
+
+img {
+  margin-block: 3rem;
+}
