@@ -20,7 +20,7 @@ h2 {
   font-family: utopia-std, serif;
   font-weight: 700;
   font-style: normal;
-  color: white;
+  color:#aeccf2;
 }
 
 h3 {
@@ -52,6 +52,11 @@ p {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+}
+
+img {
+  max-width: 100%;
+  object-fit: cover;
 }
 
 /*- maxwidth på siden samt luftrum på højre- og venstreside når vinduestørrelsen er større end 1200px
