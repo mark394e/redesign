@@ -166,3 +166,8 @@ div {
     grid-column: 3/4;
     grid-row: 3/4;
 }
+
+/* billede størrelse*/
+img {
+    width: 70%;
+  }
