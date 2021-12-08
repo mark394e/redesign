@@ -14,9 +14,10 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     /* grid-template-rows: 1fr 1fr 1fr 1fr; */
-    justify-content: center;
+    /* justify-content: center; */
     gap: 10px;
     margin: 20px;
+    text-align: center;
 }
 
 /* grid for behandlinger */
@@ -30,11 +31,11 @@
 .Parodontose2,
 .Tandsmykker {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 2fr 2fr;
     /* grid-template-rows: 1fr 1fr 1fr 1fr; */
-    justify-content: center;
     gap: 10px;
     margin: 20px;
+    text-align: center;
 }
 
 /* grid for info */
@@ -44,7 +45,6 @@
 .behandlinger{
     display: grid;
     grid-template-columns: 1fr;
-    justify-content: center;
     gap: 10px;
     margin: 20px;
 }
@@ -169,5 +169,12 @@ div {
 
 /* billede størrelse*/
 img {
-    width: 70%;
+    width: 100%;
   }
+
+.liste1{
+font-family: hero-new, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: darkgray;
+}
