@@ -1,22 +1,79 @@
-.kontakt,
-.lokation,
-.review {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-}
-
-.personale {
-  display: flex;
-}
-
 /* div {
   border: 2px solid red;
 } */
 
-img {
-  width: 100%;
+h2,
+.kontakt,
+.lokation,
+.review,
+.personale {
+  margin: 20px;
+  gap: 20px;
+  display: grid;
 }
 
-body {
-  background-color: lightgrey;
+h2 {
+  text-align: center;
+}
+
+p {
+  margin-top: 10px;
+  line-height: 1.2rem;
+}
+
+.map {
+  overflow: hidden;
+  padding-bottom: 65.25%;
+  position: relative;
+  height: 0;
+}
+
+.map iframe {
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+
+.map-text {
+  order: -1;
+}
+
+@media (min-width: 600px) {
+  .kontakt,
+  .lokation,
+  .review {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 20px;
+  }
+
+  .personale {
+    display: flex;
+    margin: 20px;
+  }
+
+  .map-text {
+    order: 0;
+  }
+}
+
+img {
+  width: 100%;
+  margin: 20px 0 20px 0;
+}
+
+.personale {
+  place-content: center;
+}
+
+.personale img {
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0;
 }
