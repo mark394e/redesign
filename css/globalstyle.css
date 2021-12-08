@@ -54,6 +54,11 @@ p {
   padding: 0;
 }
 
+img {
+  max-width: 100%;
+  object-fit: cover;
+}
+
 /*- maxwidth på siden samt luftrum på højre- og venstreside når vinduestørrelsen er større end 1200px
     6px luftrum på højre- og venstreside når man er på mobil -*/
 body {
