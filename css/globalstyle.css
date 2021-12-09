@@ -66,9 +66,14 @@ body {
   grid-template-columns: auto minmax(0, 1200px) auto;
 }
 main,
+header,
 footer {
   grid-column: 2/3;
   padding-inline: clamp(12px, 6px + 1.5vw, 24px);
+}
+
+main {
+  grid-column: 2/3;
 }
 /*-  -*/
 
@@ -84,9 +89,12 @@ header {
   background-color: var(--color-1);
   padding-block: 0.5rem;
   grid-column: 1/4;
+  display: grid;
+  grid-template-columns: auto minmax(0, 1200px) auto;
 }
 
 #navbar {
+  grid-column: 2/3;
   overflow: hidden;
   display: grid;
   grid-template-rows: 3fr 1fr;
