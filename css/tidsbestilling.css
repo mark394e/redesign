@@ -30,7 +30,9 @@ section {
   padding-top: 2rem;
 }
 
-input[type="text"] {
+input[type="text"],
+input[type="tel"],
+input[type="email"] {
   width: 100%;
   padding: 12px 20px;
   margin: 8px 0;
@@ -61,7 +63,7 @@ input[type="checkbox"] {
 #reply_type {
   margin-top: 1.5rem;
 }
-form > div > input {
+input {
   margin-bottom: 1.5rem;
 }
 
@@ -73,7 +75,7 @@ p.inline {
   font-size: 1rem;
 }
 
-#select_time {
+#select_time select {
   width: 55%;
   padding: 12px 20px;
   margin: 8px 0;
@@ -99,18 +101,21 @@ p.inline {
   display: inline-block;
   background-color: var(--color-1);
   border-radius: 8px;
+  border-style: none;
   transition: 0.15s;
   cursor: pointer;
+  font-family: hero-new, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: black;
 }
 
 #submit_button:hover {
   background-color: var(--color-3);
 }
 
-#submit_button > p {
-  color: white;
-  font-size: 1rem;
-  text-align: center;
+#submit_button:active {
+  background-color: var(--color-2);
 }
 
 img {

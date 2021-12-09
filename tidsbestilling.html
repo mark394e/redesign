@@ -19,166 +19,171 @@
       </section>
       <section id="second_section">
         <h3>Dine kontaktoplysninger:</h3>
-        <article class="double_columns">
-          <div class="flex_item">
-            <form id="first_name">
-              <label for="fname"><h4>Fornavn:</h4></label><br />
-              <input
-                type="text"
-                name="fname"
-                required
-                oninput="this.value = this.value.replace(/[^a-zA-ZäöüæøåßÄÖÜÆØÅ]/g, '').replace(/(\..*)\./g, '$1');"
-                placeholder="Fornavn"
-              /><br />
-            </form>
-          </div>
-          <div class="flex_item">
-            <form id="last_name">
-              <label for="lname"><h4>Efternavn:</h4></label><br />
-              <input
-                type="text"
-                name="lname"
-                required
-                oninput="this.value = this.value.replace(/[^a-zA-ZäöüæøåßÄÖÜÆØÅ]/g, '').replace(/(\..*)\./g, '$1');"
-                placeholder="Efternavn"
-              /><br />
-            </form>
-          </div>
-          <div class="flex_item">
-            <form id="phone_number">
-              <label for="pnumber"><h4>Telefon nummer:</h4></label><br />
-              <input
-                type="text"
-                name="pnumber"
-                required
-                maxlength="8"
-                oninput="this.value = this.value.replace(/[^0-9]/g, '').replace(/(\..*)\./g, '$1');"
-                placeholder="12 34 56 78"
-              /><br />
-            </form>
-          </div>
-          <div class="flex_item">
-            <form id="email_address">
-              <label for="email_address"><h4>E-mail:</h4></label><br />
-              <input
-                type="text"
-                name="email_address"
-                placeholder="example@email.com"
-              /><br />
-            </form>
-          </div>
-          <div class="flex_item">
-            <form id="cpr">
-              <label for="cpr"><h4>Dit CPR-nummer:</h4></label><br />
-              <input
-                type="text"
-                name="cpr"
-                required
-                maxlength="10"
-                oninput="this.value = this.value.replace(/[^0-9]/g, '').replace(/(\..*)\./g, '$1');"
-                placeholder="1234567890"
-              /><br />
-            </form>
-          </div>
-          <div class="flex_item">
-            <h4>Hvilken type patient er du:</h4>
-            <form id="patient_type">
-              <div class="radio_button">
-                <input type="radio" name="patient_type_button" />
-                <label for="new"><p class="inline">Ny patient</p></label><br />
+        <article>
+          <form class="double_columns">
+            <div class="flex_item">
+              <div id="first_name">
+                <label for="fname"><h4>Fornavn:</h4></label><br />
+                <input
+                  type="text"
+                  name="fname"
+                  required
+                  oninput="this.value = this.value.replace(/[^a-zA-ZäöüæøåßÄÖÜÆØÅ]/g, '').replace(/(\..*)\./g, '$1');"
+                  placeholder="Fornavn"
+                /><br />
               </div>
-              <div class="radio_button">
-                <input type="radio" name="patient_type_button" />
-                <label for="old">
-                  <p class="inline">Allerede patient på klinikken</p>
-                </label>
+            </div>
+            <div class="flex_item">
+              <div id="last_name">
+                <label for="lname"><h4>Efternavn:</h4></label><br />
+                <input
+                  type="text"
+                  name="lname"
+                  required
+                  oninput="this.value = this.value.replace(/[^a-zA-ZäöüæøåßÄÖÜÆØÅ]/g, '').replace(/(\..*)\./g, '$1');"
+                  placeholder="Efternavn"
+                /><br />
               </div>
-            </form>
-          </div>
-          <div class="flex_item">
-            <h4>Vælg dag(e), der passer dig bedst:</h4>
-            <form id="select_day">
-              <div class="checkbox">
-                <input type="checkbox" name="select_day_button" />
-                <label for="monday"><p class="inline">Mandag</p></label><br />
+            </div>
+            <div class="flex_item">
+              <div id="phone_number">
+                <label for="pnumber"><h4>Telefon nummer:</h4></label><br />
+                <input
+                  type="tel"
+                  name="pnumber"
+                  required
+                  maxlength="8"
+                  oninput="this.value = this.value.replace(/[^0-9]/g, '').replace(/(\..*)\./g, '$1');"
+                  placeholder="12 34 56 78"
+                /><br />
               </div>
-              <div class="checkbox">
-                <input type="checkbox" name="select_day_button" />
-                <label for="tuesday"><p class="inline">Tirsdag</p> </label
+            </div>
+            <div class="flex_item">
+              <div id="email_address">
+                <label for="email_address"><h4>E-mail:</h4></label><br />
+                <input
+                  type="email"
+                  name="email_address"
+                  placeholder="example@email.com"
+                /><br />
+              </div>
+            </div>
+            <div class="flex_item">
+              <div id="cpr_number">
+                <label for="cpr"><h4>Dit CPR-nummer:</h4></label><br />
+                <input
+                  type="text"
+                  name="cpr"
+                  required
+                  maxlength="10"
+                  oninput="this.value = this.value.replace(/[^0-9]/g, '').replace(/(\..*)\./g, '$1');"
+                  placeholder="1234567890"
+                /><br />
+              </div>
+            </div>
+            <div class="flex_item">
+              <h4>Hvilken type patient er du:</h4>
+              <div id="patient_type">
+                <div class="radio_button">
+                  <input type="radio" name="patient_type_button" />
+                  <label for="new"><p class="inline">Ny patient</p></label
+                  ><br />
+                </div>
+                <div class="radio_button">
+                  <input type="radio" name="patient_type_button" />
+                  <label for="old">
+                    <p class="inline">Allerede patient på klinikken</p>
+                  </label>
+                </div>
+              </div>
+            </div>
+            <div class="flex_item">
+              <h4>Vælg dag(e), der passer dig bedst:</h4>
+              <div id="select_day">
+                <div class="checkbox">
+                  <input type="checkbox" name="select_day_button" />
+                  <label for="monday"><p class="inline">Mandag</p></label><br />
+                </div>
+                <div class="checkbox">
+                  <input type="checkbox" name="select_day_button" />
+                  <label for="tuesday"><p class="inline">Tirsdag</p> </label
+                  ><br />
+                </div>
+                <div class="checkbox">
+                  <input type="checkbox" name="select_day_button" />
+                  <label for="wednesday"><p class="inline">Onsdag</p></label
+                  ><br />
+                </div>
+                <div class="checkbox">
+                  <input type="checkbox" name="select_day_button" />
+                  <label for="thursday"><p class="inline">Torsdag</p> </label
+                  ><br />
+                </div>
+                <div class="checkbox">
+                  <input type="checkbox" name="select_day_button" />
+                  <label for="friday"><p class="inline">Fredag</p></label><br />
+                </div>
+                <div class="checkbox">
+                  <input type="checkbox" name="select_day_button" />
+                  <label for="all"><p class="inline">Alle dage</p> </label
+                  ><br />
+                </div>
+              </div>
+            </div>
+            <div class="flex_item">
+              <h4>Vælg tidsrum, der passer dig bedst:</h4>
+              <div id="select_time">
+                <select name="time">
+                  <option value="1"><p class="inline">Hele dagen</p></option>
+                  <option value="2"><p class="inline">Formiddag</p></option>
+                  <option value="3"><p class="inline">Eftermiddag</p></option>
+                  <option value="4"><p class="inline">08:30 - 10:00</p></option>
+                  <option value="5"><p class="inline">10:00 - 12:00</p></option>
+                  <option value="6"><p class="inline">13:00 - 14:00</p></option>
+                  <option value="7"><p class="inline">14:00 - 15:00</p></option>
+                  <option value="8"><p class="inline">15:00 - 16:00</p></option>
+                </select>
+              </div>
+            </div>
+            <div class="flex_item">
+              <h4>Tilbagemeldningsform:</h4>
+              <div id="reply_type">
+                <div class="radio_button">
+                  <input type="radio" name="reply_type_button" />
+                  <label for="email"><p class="inline">E-mail</p></label><br />
+                </div>
+                <div class="radio_button">
+                  <input type="radio" name="reply_type_button" />
+                  <label for="phone">
+                    <p class="inline">Telefon</p>
+                  </label>
+                </div>
+              </div>
+            </div>
+            <div class="flex_item">
+              <div id="add_comment">
+                <label for="comment"
+                  ><h4>
+                    Indtast evt. kommentarer vedr. behandlingen, fx om det er
+                    undersøgelse, fyldning eller andet:
+                  </h4></label
+                ><br />
+                <textarea
+                  name="comment"
+                  id="comment_box"
+                  placeholder="Tilføj kommentar"
+                ></textarea
                 ><br />
               </div>
-              <div class="checkbox">
-                <input type="checkbox" name="select_day_button" />
-                <label for="wednesday"><p class="inline">Onsdag</p></label
-                ><br />
-              </div>
-              <div class="checkbox">
-                <input type="checkbox" name="select_day_button" />
-                <label for="thursday"><p class="inline">Torsdag</p> </label
-                ><br />
-              </div>
-              <div class="checkbox">
-                <input type="checkbox" name="select_day_button" />
-                <label for="friday"><p class="inline">Fredag</p></label><br />
-              </div>
-              <div class="checkbox">
-                <input type="checkbox" name="select_day_button" />
-                <label for="all"><p class="inline">Alle dage</p> </label><br />
-              </div>
-            </form>
-          </div>
-          <div class="flex_item">
-            <h4>Vælg tidsrum, der passer dig bedst:</h4>
-            <select name="time" id="select_time">
-              <option value="1"><p class="inline">Hele dagen</p></option>
-              <option value="2"><p class="inline">Formiddag</p></option>
-              <option value="3"><p class="inline">Eftermiddag</p></option>
-              <option value="4"><p class="inline">08:30 - 10:00</p></option>
-              <option value="5"><p class="inline">10:00 - 12:00</p></option>
-              <option value="6"><p class="inline">13:00 - 14:00</p></option>
-              <option value="7"><p class="inline">14:00 - 15:00</p></option>
-              <option value="8"><p class="inline">15:00 - 16:00</p></option>
-            </select>
-          </div>
-          <div class="flex_item">
-            <h4>Tilbagemeldningsform:</h4>
-            <form id="reply_type">
-              <div class="radio_button">
-                <input type="radio" name="reply_type_button" />
-                <label for="email"><p class="inline">E-mail</p></label><br />
-              </div>
-              <div class="radio_button">
-                <input type="radio" name="reply_type_button" />
-                <label for="phone">
-                  <p class="inline">Telefon</p>
-                </label>
-              </div>
-            </form>
-          </div>
-          <div class="flex_item">
-            <form id="add_comment">
-              <label for="comment"
-                ><h4>
-                  Indtast evt. kommentarer vedr. behandlingen, fx om det er
-                  undersøgelse, fyldning eller andet:
-                </h4></label
-              ><br />
-              <textarea
-                name="comment"
-                id="comment_box"
-                placeholder="Tilføj kommentar"
-              ></textarea
-              ><br />
-            </form>
-          </div>
+            </div>
+            <div class="center">
+              <input type="button" id="submit_button" value="Send" />
+            </div>
+          </form>
         </article>
       </section>
       <section id="third_section">
         <article class="center">
-          <div id="submit_button">
-            <p>Send</p>
-          </div>
-          <p>Klinkken vil snarest svare dig!</p>
           <img src="img/placeholder_bred.JPG" alt="placeholder billede" />
         </article>
       </section>
