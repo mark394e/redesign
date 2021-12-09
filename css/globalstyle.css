@@ -2,11 +2,12 @@
 
 :root {
   /*  farver til tekst  */
-  --h1_color: ;
-  --h2_color: ;
-  --h3_color: ;
-  --h4_color: ;
-  --p_color: ;
+header,
+  --h1_color: #aeccf2;
+  --h2_color: #d5e2f2;
+  --h3_color: #a0bed9;
+  --h4_color: #f2f2f2;
+  --p_color: #e9e9e6;
 
   /*  farver  */
 }
