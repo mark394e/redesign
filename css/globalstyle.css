@@ -20,7 +20,7 @@ h2 {
   font-family: utopia-std, serif;
   font-weight: 700;
   font-style: normal;
-  color:#aeccf2;
+  color: #aeccf2;
 }
 
 h3 {
@@ -66,7 +66,6 @@ body {
   grid-template-columns: auto minmax(0, 1200px) auto;
 }
 main,
-header,
 footer {
   grid-column: 2/3;
   padding-inline: clamp(12px, 6px + 1.5vw, 24px);
@@ -84,6 +83,7 @@ header {
   z-index: 10;
   background-color: var(--color-1);
   padding-block: 0.5rem;
+  grid-column: 1/4;
 }
 
 #navbar {
