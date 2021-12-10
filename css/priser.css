@@ -104,8 +104,11 @@
 
   hr{
       color: white;
-      width: 450px;
+      width: 80%;
+      margin: 0 25% 0 9%;
+      border-radius: 10px;
       text-align: center;
+      
   }
 
 /* grid placering for priser */
