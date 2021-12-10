@@ -30,6 +30,10 @@
     background-color: rgb(150, 197, 241);
   }
   
+.block{
+    display: none;
+}
+
 .Smertefri,
 .Krone_bro,
 .Delprotese,
