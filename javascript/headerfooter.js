@@ -22,7 +22,7 @@ myHeader.appendChild(navBar); //nav er child til header
 const myLogo = document.createElement("a"); //genererer a (logo) i html
 myLogo.setAttribute("href", "index.html"); //logoet får attribut href="index.html"
 myLogo.setAttribute("id", "nav-logo"); //logoet får attribut id="nav-logo"
-myLogo.textContent = "Claus Kaskenskov"; //tekst
+myLogo.textContent = "Claus Kastenskov"; //tekst
 navBar.appendChild(myLogo); //logoet er child til nav
 
 //ul
