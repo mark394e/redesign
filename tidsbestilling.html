@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="css/tidsbestilling.css" />
   </head>
   <body>
-    <main>
+    <main id="main">
       <section id="first_section">
         <div class="center">
           <h2>Tidsbestilling</h2>
@@ -28,7 +28,7 @@
                   type="text"
                   name="fname"
                   required
-                  oninput="this.value = this.value.replace(/[^a-zA-ZäöüæøåßÄÖÜÆØÅ]/g, '').replace(/(\..*)\./g, '$1');"
+                  oninput="this.value = this.value.replace(/[^a-zA-ZäöüæøåßÄÖÜÆØÅ]/g, '');"
                   placeholder="Fornavn"
                 /><br />
               </div>
@@ -40,7 +40,7 @@
                   type="text"
                   name="lname"
                   required
-                  oninput="this.value = this.value.replace(/[^a-zA-ZäöüæøåßÄÖÜÆØÅ]/g, '').replace(/(\..*)\./g, '$1');"
+                  oninput="this.value = this.value.replace(/[^a-zA-ZäöüæøåßÄÖÜÆØÅ]/g, '');"
                   placeholder="Efternavn"
                 /><br />
               </div>
@@ -53,7 +53,7 @@
                   name="pnumber"
                   required
                   maxlength="8"
-                  oninput="this.value = this.value.replace(/[^0-9]/g, '').replace(/(\..*)\./g, '$1');"
+                  oninput="this.value = this.value.replace(/[^0-9]/g, '');"
                   placeholder="12 34 56 78"
                 /><br />
               </div>
@@ -76,7 +76,7 @@
                   name="cpr"
                   required
                   maxlength="10"
-                  oninput="this.value = this.value.replace(/[^0-9]/g, '').replace(/(\..*)\./g, '$1');"
+                  oninput="this.value = this.value.replace(/[^0-9]/g, '');"
                   placeholder="1234567890"
                 /><br />
               </div>
