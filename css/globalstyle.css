@@ -93,6 +93,21 @@ main > * {
   grid-column: 2/3;
 }
 
+address,
+address > * {
+  font-size: 1rem;
+}
+
+.footer_h3 {
+  font-size: 1.75rem;
+}
+
+.footer_hr {
+  border: 0;
+  border-top: 1px solid var(--color-1);
+  margin-block: 0.25rem 1rem;
+}
+
 /*-  -*/
 
 /* #endregion global reset */
@@ -156,14 +171,18 @@ footer {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  column-gap: 2rem;
+  column-gap: 6rem;
   margin: 0;
   padding: 1.5rem;
 }
 
 #footer_flex > * {
   flex-grow: 1;
-  margin: 3rem 4rem;
+  margin: 4rem 0;
+}
+
+#footer_column3 {
+  min-width: 360px;
 }
 
 #time_table {
@@ -224,9 +243,8 @@ footer {
     transition: 0.3s;
   }
 
-  .nav_item a {
+  a.nav_link {
     font-size: 2.5rem;
-    width: 100%;
   }
 
   #hamburger {

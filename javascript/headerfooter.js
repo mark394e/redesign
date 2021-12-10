@@ -148,7 +148,8 @@ function pageLoad() {
   columnOne.setAttribute("id", "footer_column1"); //article[0] får attribut id="footer_column1"
   footerFlex.appendChild(columnOne); //article[0] er child til section
   columnOne.innerHTML =
-    "<h3>Kontaktinformation</h3>" +
+    '<h3 class="footer_h3">Kontaktinformation</h3>' +
+    '<hr class="footer_hr">' +
     "<address>" +
     "<p>+45 49 21 21 56</p><br>" +
     '<a href="mailto:klinik@kastenskov.dk"><p>klinik@kastenskov.dk</p></a><br>' +
@@ -160,13 +161,14 @@ function pageLoad() {
   columnTwo.setAttribute("id", "footer_column2"); //article[1] får attribut id="footer_column2"
   footerFlex.appendChild(columnTwo); //article[1] er child til section
   columnTwo.innerHTML =
-    "<h3>Find vej</h3>" +
+    '<h3 class="footer_h3">Find vej</h3>' +
+    '<hr class="footer_hr">' +
     "<address>" +
-    "<p>Tandlæge Claus Kastenskov</p><br>" +
-    "<p>Stengade 57,</p><br>" +
+    "<p>Tandlæge Claus Kastenskov</p>" +
+    "<p>Stengade 57,</p>" +
     "<p>3000 Helsingør</p><br>" +
-    '<a href="https://www.google.com/maps/place/Tandl%C3%A6ge+Claus+Kastenskov/@56.0347192,12.6117115,18.25z/data=!4m5!3m4!1s0x4652311147d38b79:0x50b46739b41bfe7!8m2!3d56.034712!4d12.612648"><p>Vis på kort</p></a><br>' +
-    "<p>4 minutter fra Helsingør St.</p>" +
+    '<a href="https://www.google.com/maps/place/Tandl%C3%A6ge+Claus+Kastenskov/@56.0347192,12.6117115,18.25z/data=!4m5!3m4!1s0x4652311147d38b79:0x50b46739b41bfe7!8m2!3d56.034712!4d12.612648"><p>Vis på kort</p></a>' +
+    "<p><small>4 minutter fra Helsingør St.</small></p>" +
     "</address>"; //genererer content til article[1]
 
   //article[2]
@@ -174,7 +176,8 @@ function pageLoad() {
   columnThree.setAttribute("id", "footer_column3"); //article[2] får attribut id="footer_column3"
   footerFlex.appendChild(columnThree); //article[2] er child til section
   columnThree.innerHTML =
-    "<h3>Åbningstider</h3>" +
+    '<h3 class="footer_h3">Åbningstider</h3>' +
+    '<hr class="footer_hr">' +
     '<div id="time_table">' +
     '<div class="time_row"><p>Mandag:</p><p>08:00 - 16:00</p></div>' +
     '<div class="time_row"><p>Tirsdag:</p><p>08:00 - 17:00</p></div>' +
