@@ -18,12 +18,12 @@
 }
 
 h1,
-#nav-logo {
+#nav_logo {
   font-family: utopia-std, serif;
   font-weight: 400;
   font-style: normal;
   color: white;
-  font-size: 4rem;
+  font-size: clamp(3rem, 2.47rem + 2vw, 4rem);
 }
 
 h2 {
@@ -118,22 +118,22 @@ header {
   grid-template-rows: 3fr 1fr;
 }
 
-#nav-menu {
+#nav_menu {
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
 
-.nav-item {
+.nav_item {
   list-style: none;
 }
 
-#nav-logo {
+#nav_logo {
   text-decoration: none;
   margin: auto;
 }
 
-.nav-link {
+.nav_link {
   text-decoration: none;
 }
 
@@ -163,8 +163,7 @@ footer {
 
 #footer_flex > * {
   flex-grow: 1;
-  column-gap: 3rem;
-  margin-block: 1rem;
+  margin: 3rem 4rem;
 }
 
 #time_table {
@@ -179,3 +178,74 @@ footer {
 }
 
 /* #endregion footer */
+
+/* #region burgermenu */
+
+#hamburger {
+  display: none;
+  transform: scale(125%);
+}
+
+.bar_top,
+.bar_middle,
+.bar_bottom {
+  display: block;
+  width: 24px;
+  height: 3px;
+  margin: 5px auto;
+  transition: all 0.3s ease-in-out;
+  background-color: #fff;
+}
+
+@media (max-width: 768px) {
+  #nav_menu {
+    position: fixed;
+    top: 100%;
+    left: 0;
+    transform: translateX(0);
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 100vh;
+    width: 100%;
+    padding-top: 200px;
+    padding-bottom: 0;
+    padding-right: 0;
+    text-align: center;
+    transition: 0.4s;
+  }
+
+  #nav_menu.active {
+    top: 0;
+  }
+
+  .nav_item {
+    width: 100%;
+    padding: auto;
+    transition: 0.3s;
+  }
+
+  .nav_item a {
+    font-size: 2.5rem;
+    width: 100%;
+  }
+
+  #hamburger {
+    display: block;
+    cursor: pointer;
+  }
+
+  #hamburger.active .bar_top {
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  #hamburger.active .bar_middle {
+    width: 4px;
+    transform: rotateY(90deg);
+  }
+
+  #hamburger.active .bar_bottom {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+}
+
+/* #endregion burgermenu */
