@@ -22,14 +22,21 @@ h4 {
 }
 
 p {
+  font-family: "Source Sans Pro", sans-serif;
   margin-bottom: 10%;
   font-size: 1rem;
 }
 
 /*___First section___*/
+
 .container {
-  margin-top: 20px;
+  display: grid;
+  margin: 0px;
+  padding: 0px;
+  width: 100%;
+  background-size: cover;
   text-align: center;
+  position: relative;
 }
 
 .content {
@@ -56,8 +63,12 @@ button {
   border: none;
   background: #f2f2f2;
   color: #a0bed9;
-  font-family: hero-new, sans-serif;
   transition: ease-in 0.5s;
+}
+
+button a {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 0.9rem;
 }
 
 /*Gør sådan at farven kommer frem ved mouse over*/
@@ -115,7 +126,9 @@ button:hover {
     display: grid;
     place-items: center;
     margin-bottom: 50px;
-    margin-top: 20px;
+    margin-top: 0;
+    width: 100%;
+    background-size: cover;
   }
 
   .image,
@@ -151,7 +164,12 @@ button:hover {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 5%;
+    row-gap: 7%;
     margin-bottom: 10%;
+  }
+
+  .column_3 h4 {
+    margin-top: 0;
   }
 
   /*____Third section____*/
