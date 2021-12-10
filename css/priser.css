@@ -49,7 +49,7 @@
     padding: 0 18px;
     display: none;
     overflow: hidden;
-    background-color: #f1f1f1;
+    background-color: #f3f7fa;
   }
 
 .sectionwrapper2{
@@ -82,8 +82,8 @@
 }
 /* pris bokse og tekst farve på boksene */
 .div1 {
-    border: 2px solid rgb(226, 234, 236);
-    width: 500px;
+    /* border: 2px solid rgb(226, 234, 236); */
+    width: 525px;
     border-radius: 10px;
     background-color: #aeccf2;
     color: white;
@@ -229,6 +229,7 @@
 /* billede størrelse*/
 img {
     width: 100%;
+    padding: 12px;
   }
 
 .liste1{
