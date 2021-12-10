@@ -1,4 +1,4 @@
-// til behandlingssiden //
+// til pris og behandlingssiden //
 var coll = document.getElementsByClassName("collapsible");
 var i;
 

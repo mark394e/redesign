@@ -27,7 +27,7 @@ section {
 
 .flex_item {
   min-height: 9rem;
-  padding-top: 2rem;
+  padding-block: 2rem;
 }
 
 input[type="text"],

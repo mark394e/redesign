@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="css/tidsbestilling.css" />
   </head>
   <body>
-    <main>
+    <main id="main">
       <section id="first_section">
         <div class="center">
           <h2>Tidsbestilling</h2>
@@ -20,15 +20,16 @@
       <section id="second_section">
         <h3>Dine kontaktoplysninger:</h3>
         <article>
-          <form class="double_columns">
+          <form class="double_columns" name="tidsbestilling">
             <div class="flex_item">
               <div id="first_name">
                 <label for="fname"><h4>Fornavn:</h4></label><br />
                 <input
                   type="text"
-                  name="fname"
+                  name="fornavn"
+                  id="fname"
                   required
-                  oninput="this.value = this.value.replace(/[^a-zA-ZäöüæøåßÄÖÜÆØÅ]/g, '').replace(/(\..*)\./g, '$1');"
+                  oninput="this.value = this.value.replace(/[^a-zA-ZäöüæøåßÄÖÜÆØÅ]/g, '');"
                   placeholder="Fornavn"
                 /><br />
               </div>
@@ -38,9 +39,10 @@
                 <label for="lname"><h4>Efternavn:</h4></label><br />
                 <input
                   type="text"
-                  name="lname"
+                  name="efternavn"
+                  id="lname"
                   required
-                  oninput="this.value = this.value.replace(/[^a-zA-ZäöüæøåßÄÖÜÆØÅ]/g, '').replace(/(\..*)\./g, '$1');"
+                  oninput="this.value = this.value.replace(/[^a-zA-ZäöüæøåßÄÖÜÆØÅ]/g, '');"
                   placeholder="Efternavn"
                 /><br />
               </div>
@@ -50,20 +52,23 @@
                 <label for="pnumber"><h4>Telefon nummer:</h4></label><br />
                 <input
                   type="tel"
-                  name="pnumber"
+                  name="telefon_nummer"
+                  id="pnumber"
                   required
                   maxlength="8"
-                  oninput="this.value = this.value.replace(/[^0-9]/g, '').replace(/(\..*)\./g, '$1');"
+                  oninput="this.value = this.value.replace(/[^0-9]/g, '');"
                   placeholder="12 34 56 78"
                 /><br />
               </div>
             </div>
             <div class="flex_item">
-              <div id="email_address">
+              <div id="email">
                 <label for="email_address"><h4>E-mail:</h4></label><br />
                 <input
                   type="email"
-                  name="email_address"
+                  name="email_adresse"
+                  id="email_address"
+                  required
                   placeholder="example@email.com"
                 /><br />
               </div>
@@ -73,11 +78,12 @@
                 <label for="cpr"><h4>Dit CPR-nummer:</h4></label><br />
                 <input
                   type="text"
-                  name="cpr"
+                  name="cpr_nummer"
+                  id="cpr"
                   required
                   maxlength="10"
-                  oninput="this.value = this.value.replace(/[^0-9]/g, '').replace(/(\..*)\./g, '$1');"
-                  placeholder="1234567890"
+                  oninput="this.value = this.value.replace(/[^0-9]/g, '');"
+                  placeholder="0123456789"
                 /><br />
               </div>
             </div>
@@ -85,13 +91,14 @@
               <h4>Hvilken type patient er du:</h4>
               <div id="patient_type">
                 <div class="radio_button">
-                  <input type="radio" name="patient_type_button" />
-                  <label for="new"><p class="inline">Ny patient</p></label
+                  <input type="radio" name="ny_patient" id="new_member" />
+                  <label for="new_member"
+                    ><p class="inline">Ny patient</p></label
                   ><br />
                 </div>
                 <div class="radio_button">
-                  <input type="radio" name="patient_type_button" />
-                  <label for="old">
+                  <input type="radio" name="allerede_patient" id="member" />
+                  <label for="member">
                     <p class="inline">Allerede patient på klinikken</p>
                   </label>
                 </div>
@@ -101,31 +108,31 @@
               <h4>Vælg dag(e), der passer dig bedst:</h4>
               <div id="select_day">
                 <div class="checkbox">
-                  <input type="checkbox" name="select_day_button" />
+                  <input type="checkbox" name="mandag" id="monday" />
                   <label for="monday"><p class="inline">Mandag</p></label><br />
                 </div>
                 <div class="checkbox">
-                  <input type="checkbox" name="select_day_button" />
+                  <input type="checkbox" name="tirsdag" id="tuesday" />
                   <label for="tuesday"><p class="inline">Tirsdag</p> </label
                   ><br />
                 </div>
                 <div class="checkbox">
-                  <input type="checkbox" name="select_day_button" />
+                  <input type="checkbox" name="onsdag" id="wednesday" />
                   <label for="wednesday"><p class="inline">Onsdag</p></label
                   ><br />
                 </div>
                 <div class="checkbox">
-                  <input type="checkbox" name="select_day_button" />
+                  <input type="checkbox" name="torsdag" id="thursday" />
                   <label for="thursday"><p class="inline">Torsdag</p> </label
                   ><br />
                 </div>
                 <div class="checkbox">
-                  <input type="checkbox" name="select_day_button" />
+                  <input type="checkbox" name="fredag" id="friday" />
                   <label for="friday"><p class="inline">Fredag</p></label><br />
                 </div>
                 <div class="checkbox">
-                  <input type="checkbox" name="select_day_button" />
-                  <label for="all"><p class="inline">Alle dage</p> </label
+                  <input type="checkbox" name="alle_dage" id="all_days" />
+                  <label for="all_days"><p class="inline">Alle dage</p> </label
                   ><br />
                 </div>
               </div>
@@ -133,7 +140,7 @@
             <div class="flex_item">
               <h4>Vælg tidsrum, der passer dig bedst:</h4>
               <div id="select_time">
-                <select name="time">
+                <select name="tidspunkt">
                   <option value="1"><p class="inline">Hele dagen</p></option>
                   <option value="2"><p class="inline">Formiddag</p></option>
                   <option value="3"><p class="inline">Eftermiddag</p></option>
@@ -149,12 +156,13 @@
               <h4>Tilbagemeldningsform:</h4>
               <div id="reply_type">
                 <div class="radio_button">
-                  <input type="radio" name="reply_type_button" />
-                  <label for="email"><p class="inline">E-mail</p></label><br />
+                  <input type="radio" name="paa_email" id="reply_email" />
+                  <label for="reply_email"><p class="inline">E-mail</p></label
+                  ><br />
                 </div>
                 <div class="radio_button">
-                  <input type="radio" name="reply_type_button" />
-                  <label for="phone">
+                  <input type="radio" name="paa_telefon" id="reply_phone" />
+                  <label for="reply_phone">
                     <p class="inline">Telefon</p>
                   </label>
                 </div>
@@ -162,16 +170,16 @@
             </div>
             <div class="flex_item">
               <div id="add_comment">
-                <label for="comment"
+                <label for="comment_box"
                   ><h4>
                     Indtast evt. kommentarer vedr. behandlingen, fx om det er
                     undersøgelse, fyldning eller andet:
                   </h4></label
                 ><br />
                 <textarea
-                  name="comment"
+                  name="kommentar"
                   id="comment_box"
-                  placeholder="Tilføj kommentar"
+                  placeholder="Tilføj kommentar (valgfrit)"
                 ></textarea
                 ><br />
               </div>
