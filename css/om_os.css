@@ -2,15 +2,6 @@
   border: 2px solid red;
 } */
 
-.kontakt,
-.lokation,
-.review,
-main {
-  margin: 20px;
-  gap: 20px;
-  display: grid;
-}
-
 h2 {
   text-align: center;
   margin: 20px;
@@ -41,14 +32,19 @@ p {
 }
 
 @media (max-width: 400px) {
-  .main {
-    display: grid;
-  }
   .personale {
     order: 1;
   }
   .personale_txt {
     order: 1;
+  }
+
+  .kontakt,
+  .lokation,
+  .review,
+  main {
+    gap: 20px;
+    display: grid;
   }
 }
 
@@ -58,7 +54,15 @@ p {
   .review {
     display: grid;
     grid-template-columns: 1fr 1fr;
+  }
+
+  .kontakt,
+  .lokation,
+  .review,
+  main {
     margin: 20px;
+    gap: 20px;
+    display: grid;
   }
 
   .personale {
