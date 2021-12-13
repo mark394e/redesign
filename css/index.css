@@ -29,6 +29,12 @@ p {
 
 /*___First section___*/
 
+main .container {
+  display: grid;
+  margin: 0;
+  padding: 0;
+}
+
 .container {
   display: grid;
   margin: 0px;
@@ -36,7 +42,6 @@ p {
   width: 100%;
   background-size: cover;
   text-align: center;
-  position: relative;
 }
 
 .content {
@@ -64,17 +69,12 @@ button {
   background: #f2f2f2;
   color: #a0bed9;
   transition: ease-in 0.5s;
+  curser: pointer;
 }
 
 button a {
-  font-family: "Source Sans Pro", sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 0.9rem;
-}
-
-/*Gør sådan at farven kommer frem ved mouse over*/
-button:hover {
-  box-shadow: inset 170px 0 0 0 #a0bed9;
-  color: white;
 }
 
 /* unvisited link */
@@ -82,7 +82,6 @@ button:hover {
   color: #a0bed9;
   text-decoration: none;
 }
-
 /* visited link */
 .container a:visited {
   color: #a0bed9;
@@ -92,6 +91,18 @@ button:hover {
 .container a:hover {
   color: white;
   text-decoration: underline;
+}
+
+/*Gør sådan at farven kommer frem ved mouse over*/
+button:hover {
+  box-shadow: inset 170px 0 0 0 #a0bed9;
+  color: white;
+  text-decoration: underline;
+}
+
+.button p {
+  margin-bottom: 0;
+  margin-top: 0;
 }
 
 /*___Second section___*/
