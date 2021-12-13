@@ -85,7 +85,7 @@
     /* border: 2px solid rgb(226, 234, 236); */
     width: 540px;
     border-radius: 10px;
-    background-color: #C7D1DD;
+    background-color: #C7D4DD;
     /* background-color: #aeccf2; */
     color: white;
   }
@@ -103,7 +103,7 @@
       color: #658fb3;
   }
 
-  hr{
+  .hr1{
       color: white;
       width: 80%;
       margin: 0 25% 0 9%;
