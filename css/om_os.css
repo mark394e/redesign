@@ -90,3 +90,8 @@ img {
   margin-right: auto;
   margin-top: 0;
 }
+
+.kontakt a {
+  color: #aeccf2;
+  font-family: hero-new;
+}
