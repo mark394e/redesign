@@ -23,7 +23,7 @@
           <form class="double_columns" name="tidsbestilling">
             <div class="flex_item">
               <div id="first_name">
-                <label for="fname"><h4>Fornavn:</h4></label><br />
+                <label for="fname">Fornavn:</label><br />
                 <input
                   type="text"
                   name="fornavn"
@@ -36,7 +36,7 @@
             </div>
             <div class="flex_item">
               <div id="last_name">
-                <label for="lname"><h4>Efternavn:</h4></label><br />
+                <label for="lname">Efternavn:</label><br />
                 <input
                   type="text"
                   name="efternavn"
@@ -49,7 +49,7 @@
             </div>
             <div class="flex_item">
               <div id="phone_number">
-                <label for="pnumber"><h4>Telefon nummer:</h4></label><br />
+                <label for="pnumber">Telefon nummer:</label><br />
                 <input
                   type="tel"
                   name="telefon_nummer"
@@ -63,7 +63,7 @@
             </div>
             <div class="flex_item">
               <div id="email">
-                <label for="email_address"><h4>E-mail:</h4></label><br />
+                <label for="email_address">E-mail:</label><br />
                 <input
                   type="email"
                   name="email_adresse"
@@ -75,7 +75,7 @@
             </div>
             <div class="flex_item">
               <div id="cpr_number">
-                <label for="cpr"><h4>Dit CPR-nummer:</h4></label><br />
+                <label for="cpr">Dit CPR-nummer:</label><br />
                 <input
                   type="text"
                   name="cpr_nummer"
@@ -92,15 +92,11 @@
               <div id="patient_type">
                 <div class="radio_button">
                   <input type="radio" name="ny_patient" id="new_member" />
-                  <label for="new_member"
-                    ><p class="inline">Ny patient</p></label
-                  ><br />
+                  <label for="new_member">Ny patient</label><br />
                 </div>
                 <div class="radio_button">
                   <input type="radio" name="allerede_patient" id="member" />
-                  <label for="member">
-                    <p class="inline">Allerede patient på klinikken</p>
-                  </label>
+                  <label for="member"> Allerede patient på klinikken </label>
                 </div>
               </div>
             </div>
@@ -109,31 +105,27 @@
               <div id="select_day">
                 <div class="checkbox">
                   <input type="checkbox" name="mandag" id="monday" />
-                  <label for="monday"><p class="inline">Mandag</p></label><br />
+                  <label for="monday">Mandag</label><br />
                 </div>
                 <div class="checkbox">
                   <input type="checkbox" name="tirsdag" id="tuesday" />
-                  <label for="tuesday"><p class="inline">Tirsdag</p> </label
-                  ><br />
+                  <label for="tuesday">Tirsdag</label><br />
                 </div>
                 <div class="checkbox">
                   <input type="checkbox" name="onsdag" id="wednesday" />
-                  <label for="wednesday"><p class="inline">Onsdag</p></label
-                  ><br />
+                  <label for="wednesday">Onsdag</label><br />
                 </div>
                 <div class="checkbox">
                   <input type="checkbox" name="torsdag" id="thursday" />
-                  <label for="thursday"><p class="inline">Torsdag</p> </label
-                  ><br />
+                  <label for="thursday">Torsdag </label><br />
                 </div>
                 <div class="checkbox">
                   <input type="checkbox" name="fredag" id="friday" />
-                  <label for="friday"><p class="inline">Fredag</p></label><br />
+                  <label for="friday">Fredag</label><br />
                 </div>
                 <div class="checkbox">
                   <input type="checkbox" name="alle_dage" id="all_days" />
-                  <label for="all_days"><p class="inline">Alle dage</p> </label
-                  ><br />
+                  <label for="all_days">Alle dage </label><br />
                 </div>
               </div>
             </div>
@@ -141,14 +133,14 @@
               <h4>Vælg tidsrum, der passer dig bedst:</h4>
               <div id="select_time">
                 <select name="tidspunkt">
-                  <option value="1"><p class="inline">Hele dagen</p></option>
-                  <option value="2"><p class="inline">Formiddag</p></option>
-                  <option value="3"><p class="inline">Eftermiddag</p></option>
-                  <option value="4"><p class="inline">08:30 - 10:00</p></option>
-                  <option value="5"><p class="inline">10:00 - 12:00</p></option>
-                  <option value="6"><p class="inline">13:00 - 14:00</p></option>
-                  <option value="7"><p class="inline">14:00 - 15:00</p></option>
-                  <option value="8"><p class="inline">15:00 - 16:00</p></option>
+                  <option value="1">Hele dagen</option>
+                  <option value="2">Formiddag</option>
+                  <option value="3">Eftermiddag</option>
+                  <option value="4">08:30 - 10:00</option>
+                  <option value="5">10:00 - 12:00</option>
+                  <option value="6">13:00 - 14:00</option>
+                  <option value="7">14:00 - 15:00</option>
+                  <option value="8">15:00 - 16:00</option>
                 </select>
               </div>
             </div>
@@ -157,24 +149,19 @@
               <div id="reply_type">
                 <div class="radio_button">
                   <input type="radio" name="paa_email" id="reply_email" />
-                  <label for="reply_email"><p class="inline">E-mail</p></label
-                  ><br />
+                  <label for="reply_email">E-mail</label><br />
                 </div>
                 <div class="radio_button">
                   <input type="radio" name="paa_telefon" id="reply_phone" />
-                  <label for="reply_phone">
-                    <p class="inline">Telefon</p>
-                  </label>
+                  <label for="reply_phone"> Telefon </label>
                 </div>
               </div>
             </div>
             <div class="flex_item">
               <div id="add_comment">
-                <label for="comment_box"
-                  ><h4>
-                    Indtast evt. kommentarer vedr. behandlingen, fx om det er
-                    undersøgelse, fyldning eller andet:
-                  </h4></label
+                <label for="comment_box">
+                  Indtast evt. kommentarer vedr. behandlingen, fx om det er
+                  undersøgelse, fyldning eller andet: </label
                 ><br />
                 <textarea
                   name="kommentar"
@@ -196,7 +183,7 @@
         </article>
       </section>
     </main>
-    <script src="javascript/login.js"></script>
     <script src="javascript/headerfooter.js"></script>
+    <script src="javascript/login.js"></script>
   </body>
 </html>
