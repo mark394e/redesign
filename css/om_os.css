@@ -5,7 +5,6 @@
 .kontakt,
 .lokation,
 .review,
-.personale,
 main {
   margin: 20px;
   gap: 20px;
@@ -79,7 +78,7 @@ img {
 }
 
 .personale {
-  place-content: center;
+  justify-content: space-between;
 }
 
 .personale img {
