@@ -151,9 +151,9 @@ function pageLoad() {
     '<h3 class="footer_h3">Kontaktinformation</h3>' +
     '<hr class="footer_hr">' +
     "<address>" +
-    "<p>+45 49 21 21 56</p><br>" +
-    '<a href="mailto:klinik@kastenskov.dk"><p>klinik@kastenskov.dk</p></a><br>' +
-    '<a href="https://www.facebook.com/pages/Tandklinikken-Claus-Kastenskov/754821831261917?pnref=lhc"><p>Find os på Facebook</p></a>' +
+    '<p class="footer_p">+45 49 21 21 56</p><br>' +
+    '<a href="mailto:klinik@kastenskov.dk"><p class="footer_p">klinik@kastenskov.dk</p></a><br>' +
+    '<a href="https://www.facebook.com/pages/Tandklinikken-Claus-Kastenskov/754821831261917?pnref=lhc"><p class="footer_p">Find os på Facebook</p></a>' +
     "</address>"; //genererer content til article[0]
 
   //article[1]
@@ -164,11 +164,11 @@ function pageLoad() {
     '<h3 class="footer_h3">Find vej</h3>' +
     '<hr class="footer_hr">' +
     "<address>" +
-    "<p>Tandlæge Claus Kastenskov</p>" +
-    "<p>Stengade 57,</p>" +
-    "<p>3000 Helsingør</p><br>" +
-    '<a href="https://www.google.com/maps/place/Tandl%C3%A6ge+Claus+Kastenskov/@56.0347192,12.6117115,18.25z/data=!4m5!3m4!1s0x4652311147d38b79:0x50b46739b41bfe7!8m2!3d56.034712!4d12.612648"><p>Vis på kort</p></a>' +
-    "<p><small>4 minutter fra Helsingør St.</small></p>" +
+    '<p class="footer_p">Tandlæge Claus Kastenskov</p>' +
+    '<p class="footer_p">Stengade 57,</p>' +
+    '<p class="footer_p">3000 Helsingør</p><br>' +
+    '<a href="https://www.google.com/maps/place/Tandl%C3%A6ge+Claus+Kastenskov/@56.0347192,12.6117115,18.25z/data=!4m5!3m4!1s0x4652311147d38b79:0x50b46739b41bfe7!8m2!3d56.034712!4d12.612648"><p class="footer_p">Vis på kort</p></a>' +
+    '<p class="footer_p"><small>4 minutter fra Helsingør St.</small></p>' +
     "</address>"; //genererer content til article[1]
 
   //article[2]
@@ -179,13 +179,13 @@ function pageLoad() {
     '<h3 class="footer_h3">Åbningstider</h3>' +
     '<hr class="footer_hr">' +
     '<div id="time_table">' +
-    '<div class="time_row"><p>Mandag:</p><p>08:00 - 16:00</p></div>' +
-    '<div class="time_row"><p>Tirsdag:</p><p>08:00 - 17:00</p></div>' +
-    '<div class="time_row"><p>Onsdag:</p><p>08:00 - 16:00</p></div>' +
-    '<div class="time_row"><p>Torsdag:</p><p>08:00 - 16:00</p></div>' +
-    '<div class="time_row"><p>Fredag:</p><p>08:00 - 12:00</p></div>' +
-    '<div class="time_row"><p>Lørdag:</p><p>Lukket</p></div>' +
-    '<div class="time_row"><p>Søndag:</p><p>Lukket</p></div>' +
+    '<div class="time_row"><p class="footer_p">Mandag:</p><p class="footer_p">08:00 - 16:00</p></div>' +
+    '<div class="time_row"><p class="footer_p">Tirsdag:</p><p class="footer_p">08:00 - 17:00</p></div>' +
+    '<div class="time_row"><p class="footer_p">Onsdag:</p><p class="footer_p">08:00 - 16:00</p></div>' +
+    '<div class="time_row"><p class="footer_p">Torsdag:</p><p class="footer_p">08:00 - 16:00</p></div>' +
+    '<div class="time_row"><p class="footer_p">Fredag:</p><p class="footer_p">08:00 - 12:00</p></div>' +
+    '<div class="time_row"><p class="footer_p">Lørdag:</p><p class="footer_p">Lukket</p></div>' +
+    '<div class="time_row"><p class="footer_p">Søndag:</p><p class="footer_p">Lukket</p></div>' +
     "</div>"; //genererer content til article[2]
 
   // // // // // //
