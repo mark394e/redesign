@@ -47,7 +47,7 @@ label {
   font-family: utopia-std, serif;
   font-weight: 400;
   font-style: normal;
-  color: darkgray;
+  color: dimgray;
   font-size: 1.2rem;
 }
 
@@ -55,7 +55,7 @@ p {
   font-family: hero-new, sans-serif;
   font-weight: 400;
   font-style: normal;
-  color: darkgray;
+  color: dimgray;
 }
 
 a {
@@ -80,10 +80,6 @@ img {
   max-width: 100%;
   object-fit: cover;
 }
-.fullsize {
-  max-width: 1920px;
-  grid-column: 1/4;
-}
 
 /*- maxwidth på siden samt luftrum på højre- og venstreside når vinduestørrelsen er større end 1200px
     6px luftrum på højre- og venstreside når man er på mobil -*/
@@ -100,20 +96,6 @@ main > * {
 address,
 address > * {
   font-size: 1rem;
-}
-
-.footer_p {
-  color: white;
-}
-
-.footer_h3 {
-  font-size: 1.75rem;
-}
-
-.footer_hr {
-  border: 0;
-  border-top: 1px solid var(--color-1);
-  margin-block: 0.25rem 1rem;
 }
 
 /*-  -*/
@@ -172,7 +154,6 @@ header {
 footer {
   width: 100%;
   background-color: black;
-  padding-block: 1rem;
 
   grid-column: 1/4;
   display: grid;
@@ -191,7 +172,7 @@ footer {
 
 #footer_flex > * {
   flex-grow: 1;
-  margin: 4rem 0;
+  margin: 1.5rem 0;
 }
 
 #footer_column3 {
@@ -207,6 +188,23 @@ footer {
 .time_row {
   display: flex;
   justify-content: space-between;
+}
+
+.footer_p {
+  color: white;
+  margin-bottom: 0;
+  line-height: 1.75rem;
+}
+
+.footer_h3 {
+  font-size: 1.75rem;
+  margin-bottom: 0;
+}
+
+.footer_hr {
+  border: 0;
+  border-top: 1px solid var(--color-1);
+  margin-block: 0.25rem 1rem;
 }
 
 /* #endregion footer */
