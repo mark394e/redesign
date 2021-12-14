@@ -29,12 +29,6 @@ p {
 
 /*___First section___*/
 
-main .container {
-  display: grid;
-  margin: 0;
-  padding: 0;
-}
-
 .container {
   display: grid;
   margin: 0px;
@@ -64,40 +58,39 @@ button {
   margin: 10px;
   margin-bottom: 30px;
   border-radius: 25px; /*gør kanterne blødere*/
-  box-shadow: inset 0 0 0 0 #a0bed9;
+  box-shadow: inset 0 0 0 0 #f2f2f2;
   border: none;
-  background: #f2f2f2;
-  color: #a0bed9;
+  background: #a0bed9;
+  color: #f2f2f2;
   transition: ease-in 0.5s;
-  curser: pointer;
 }
 
-button a {
-  font-family: "Roboto", sans-serif;
+button p {
+  color: #f2f2f2;
+}
+
+/* unvisited link*/
+.button p {
+  color: #f2f2f2;
+  text-decoration: none;
   font-size: 0.9rem;
 }
 
-/* unvisited link */
-.container a:link {
-  color: #a0bed9;
-  text-decoration: none;
-}
-/* visited link */
-.container a:visited {
-  color: #a0bed9;
-}
-
-/* mouse over link */
-.container a:hover {
-  color: white;
-  text-decoration: underline;
+/*visited link*/
+.button:visited {
+  color: #f2f2f2;
 }
 
 /*Gør sådan at farven kommer frem ved mouse over*/
 button:hover {
-  box-shadow: inset 170px 0 0 0 #a0bed9;
-  color: white;
+  box-shadow: inset 170px 0 0 0 #f2f2f2;
+  color: #a0bed9;
   text-decoration: underline;
+  cursor: pointer;
+}
+
+.button p:hover {
+  color: #a0bed9;
 }
 
 .button p {
@@ -159,8 +152,12 @@ button:hover {
   }
 
   .content p {
-    color: white;
+    color: #f2f2f2;
     font-size: 1rem;
+  }
+
+  .button p {
+    color: #f2f2f2;
   }
 
   .content h2 {
@@ -181,6 +178,11 @@ button:hover {
 
   .column_3 h4 {
     margin-top: 0;
+  }
+
+  .column_4 img {
+    width: 300px;
+    height: auto;
   }
 
   /*____Third section____*/
