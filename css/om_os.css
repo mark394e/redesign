@@ -99,3 +99,12 @@ img {
   color: #aeccf2;
   font-family: hero-new;
 }
+
+.review div p {
+  font-style: italic;
+}
+
+.review_navn {
+  font-weight: bold;
+  font-style: normal;
+}
