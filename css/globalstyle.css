@@ -54,6 +54,7 @@ label {
 }
 
 p {
+  /* font-family: hero-new, sans-serif; */
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
   font-style: normal;
