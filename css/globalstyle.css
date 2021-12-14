@@ -195,13 +195,13 @@ footer {
 
 .footer_p {
   color: white;
-  margin-bottom: 0;
+  margin: 0;
   line-height: 1.75rem;
 }
 
 .footer_h3 {
   font-size: 1.75rem;
-  margin-bottom: 0;
+  margin: 0;
   color: white;
 }
 
