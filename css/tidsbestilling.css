@@ -94,6 +94,10 @@ p.inline {
   height: 8rem;
 }
 
+input[type="button"] {
+  font-family: "Montserrat", sans-serif;
+}
+
 #submit_button {
   /*  width: 7rem;
   padding: 12px 20px;
@@ -107,17 +111,14 @@ p.inline {
   font-weight: 400;
   font-style: normal;
   color: black;*/
-  width: 140px;
-  padding: 15px;
+  width: 8.75rem;
+  padding: 16px;
   text-align: center;
-  margin: 10px;
-  margin-bottom: 30px;
-  border-radius: 25px;
+  border-radius: 48px;
   box-shadow: inset 0 0 0 0 #a0bed9;
   border: none;
   background: #f2f2f2;
   color: #a0bed9;
-  font-family: "Source Sans Pro", sans-serif;
   font-size: 0.9rem;
   cursor: pointer;
   transition: ease-in 0.5s;
@@ -130,7 +131,10 @@ p.inline {
 }
 
 #bg {
-  display: none;
+  z-index: -1;
+  opacity: 0;
+  transition: 0.5s;
+  position: fixed;
 }
 
 #pop_up {
@@ -145,19 +149,37 @@ p.inline {
   transform: translate(-50%, -50%);
   box-shadow: 4px 4px 16px rgba(0, 0, 0, 0.2);
   display: grid;
-  grid-template-rows: 1fr 3fr;
+  grid-template-rows: 1fr 3fr 1fr;
   gap: 1rem;
   text-align: center;
 }
 
 #bg.active {
-  display: block;
-  position: fixed;
+  z-index: 2;
+  opacity: 1;
   width: 100vw;
   height: 100vh;
   background-color: rgba(0, 0, 0, 0.4);
   left: 0;
   top: 0;
+}
+
+#close_button {
+  width: 7.5rem;
+  padding: 0.75rem;
+  text-align: center;
+  border-radius: 48px;
+  border: 1px solid dimgray;
+  background: white;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: 0.3s;
+  place-self: center;
+}
+
+#close_button:hover {
+  border: 1px solid white;
+  background: #a0bed9;
 }
 
 /*#submit_button:active {
