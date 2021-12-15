@@ -5,9 +5,6 @@ img {
 /*____Generelt/mobilversion___*/
 
 /*Styling på overskrifter + tekst*/
-h2 {
-  font-size: 2rem;
-}
 
 h3 {
   margin-bottom: 20px;
@@ -22,9 +19,9 @@ h4 {
 }
 
 p {
-  font-family: "Source Sans Pro", sans-serif;
   margin-bottom: 10%;
   font-size: 1rem;
+  line-height: 1.5;
 }
 
 main {
@@ -54,21 +51,72 @@ main > *:not(#first_section) > * {
   max-height: 850px;
 }
 
-.container {
+#first_section {
+  display: grid;
+  place-items: center;
+  margin-bottom: 50px;
+  margin-top: 0;
+  width: 100%;
+  background-size: cover;
+  background: black;
+}
+
+img,
+.content {
+  grid-area: 1/1;
+  text-align: center;
+}
+
+#first_section img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  opacity: 0.5;
+}
+
+.content {
+  padding: 2rem;
+  z-index: 1;
+}
+
+.content {
+  margin-top: 30px;
+  padding: 20px;
+}
+
+.content h3 {
+  color: white;
+}
+
+.content p {
+  color: white;
+  font-size: 1rem;
+}
+
+.button p {
+  color: white;
+}
+
+.content h2 {
+  font-size: 2.3rem;
+  font-weight: 300;
+  color: white;
+}
+
+/*.container {
   display: grid;
   margin: 0px;
   padding: 0px;
   width: 100%;
   background-size: cover;
   text-align: center;
-}
+}*/
 
 .content {
   margin-top: 10px;
 }
 
 .content p {
-  color: #aeccf2;
   margin: 10px;
   margin-bottom: 30px;
   line-height: 25px;
@@ -77,28 +125,22 @@ main > *:not(#first_section) > * {
 }
 
 button {
-  width: 170px;
-  padding: 15px;
-  text-align: center;
+  width: 170px; /*bredde af knappen*/
+  padding: 15px; /*space rundt om tekst i knap*/
   margin: 10px;
   margin-bottom: 30px;
   border-radius: 25px; /*gør kanterne blødere*/
-  box-shadow: inset 0 0 0 0 #f2f2f2;
+  box-shadow: inset 0 0 0 0 #f2f2f2; /*først ingen farve, da det først kommer ved hover*/
   border: none;
   background: #a0bed9;
   color: #f2f2f2;
-  transition: ease-in 0.5s;
-}
-
-button p {
-  color: #f2f2f2;
-}
-
-/* unvisited link*/
-.button p {
-  color: #f2f2f2;
-  text-decoration: none;
+  transition: ease-in 0.5s; /*laver efffekt på knao*/
   font-size: 0.9rem;
+}
+
+.button p {
+  font-size: 0.9rem;
+  color: #f2f2f2;
 }
 
 /*visited link*/
@@ -118,6 +160,7 @@ button:hover {
   color: #a0bed9;
 }
 
+/*for at fjerne margin for p*/
 .button p {
   margin-bottom: 0;
   margin-top: 0;
@@ -136,11 +179,11 @@ button:hover {
 }
 
 .column_1 img {
-  border-radius: 50%;
+  border-radius: 0.2rem;
 }
 
 .column_4 img {
-  border-radius: 50%;
+  border-radius: 0.2rem;
 }
 
 /*___Third section___*/
@@ -153,7 +196,7 @@ button:hover {
   text-align: center;
 }
 
-/*___WEB version___*/
+/*___TABLET/WEB version___*/
 @media (min-width: 700px) {
   h3 {
     font-size: 1.6rem;
@@ -164,24 +207,35 @@ button:hover {
   }
 
   /*___First section___*/
-  .container {
+  #first_section {
     display: grid;
     place-items: center;
     margin-bottom: 50px;
     margin-top: 0;
     width: 100%;
     background-size: cover;
+    background: black;
   }
 
-  .image,
+  img,
   .content {
     grid-area: 1/1;
     text-align: center;
   }
 
+  #first_section img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    opacity: 0.5;
+  }
+
   .content {
-    background: rgba(128, 128, 125, 0.7);
-    border: 2px solid #f2f2f2;
+    padding: 2rem;
+    z-index: 1;
+  }
+
+  .content {
     margin-top: 30px;
     padding: 20px;
   }
@@ -191,17 +245,16 @@ button:hover {
   }
 
   .content p {
-    color: #f2f2f2;
+    color: white;
     font-size: 1rem;
   }
 
   .button p {
-    color: #f2f2f2;
+    color: white;
   }
 
   .content h2 {
     font-size: 60px;
-    margin-top: 30px; /*så teksten rykker længere ned, og ikke er lige i midten*/
     font-weight: 300;
     color: white;
   }
@@ -219,10 +272,15 @@ button:hover {
     margin-top: 0;
   }
 
-  /*.column_4 img {
-    width: 300px;
-    height: auto;
-  }*/
-
   /*____Third section____*/
+}
+
+@media (min-width: 1000px) {
+  .content h2 {
+    font-size: 5rem;
+  }
+
+  .content p {
+    font-size: 1rem;
+  }
 }
