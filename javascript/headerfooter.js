@@ -2,8 +2,9 @@
 //jeg viser hvor vi er henne i DOMmen med: /* */
 
 /*window.addEventListener("load", pageLoad);
+//note: pageLoad() er indtil videre slået fra, indtil vi finder på en bedre løsning, da det gav nogle problemer på om_os.html
 
-function pageLoad() {*/ //note: pageLoad() er indtil videre slået fra, indtil vi finder på en bedre løsning, da det gav nogle problemer på om_os.html
+function pageLoad() {*/
 /* html > body */
 //header
 const myHeader = document.createElement("header"); //genererer header
