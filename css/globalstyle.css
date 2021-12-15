@@ -33,7 +33,8 @@ h2 {
   font-family: utopia-std, serif;
   font-weight: 700;
   font-style: normal;
-  color: #aeccf2;
+  /*color: #aeccf2;*/
+  color: #3965b8;
   font-size: 2rem;
 }
 
@@ -41,7 +42,8 @@ h3 {
   font-family: utopia-std, serif;
   font-weight: 700;
   font-style: normal;
-  color: #aeccf2;
+  /*color: #aeccf2;*/
+  color: #3965b8;
   font-size: 1.5rem;
 }
 
@@ -113,7 +115,8 @@ header {
   top: 0;
   width: 100%;
   z-index: 10;
-  background-color: var(--color-1);
+  /*background-color: var(--color-1);*/
+  background-color: #5d93e3;
   padding-block: 1rem;
   grid-column: 1/4;
   display: grid;
@@ -157,7 +160,8 @@ header {
 
 footer {
   width: 100%;
-  background-color: #b0c7d8;
+  /*background-color: #b0c7d8;*/
+  background-color: #59708f;
 
   grid-column: 1/4;
   display: grid;
