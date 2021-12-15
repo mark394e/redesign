@@ -27,7 +27,32 @@ p {
   font-size: 1rem;
 }
 
+main {
+  /* overskriver globalstyle.css */
+  padding-inline: 0;
+  display: block;
+}
+
+main > *:not(#first_section) {
+  /* rykker reglerne ned fra main til alle sections bortset fra #first_section */
+  padding-inline: clamp(12px, 6px + 1.5vw, 24px);
+  display: grid;
+  grid-template-columns: auto minmax(0, 1200px) auto;
+}
+
+main > *:not(#first_section) > * {
+  grid-column: 2/3;
+}
+
 /*___First section___*/
+
+#first_section {
+  grid-column: 1/4;
+}
+
+#splashbillede {
+  max-height: 850px;
+}
 
 .container {
   display: grid;
