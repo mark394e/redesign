@@ -22,11 +22,9 @@ myHeader.appendChild(navBar); //nav er child til header
 /* html > body > header > nav */
 //nav har 3 child elementer
 
-//a
-const myLogo = document.createElement("a"); //genererer a (logo)
-myLogo.setAttribute("href", "index.html"); //logoet får attribut href="index.html"
+//div
+const myLogo = document.createElement("div"); //genererer div (logo)
 myLogo.setAttribute("id", "nav_logo"); //logoet får attribut id="nav_logo"
-myLogo.textContent = "Claus Kastenskov"; //tekst
 navBar.appendChild(myLogo); //logoet er child til nav
 
 //ul
@@ -38,6 +36,22 @@ navBar.appendChild(navMenu); //ul er child til nav
 const burgerMenu = document.createElement("div"); //genererer div (burgermenu)
 burgerMenu.setAttribute("id", "hamburger"); //div får attribut id="hamburger"
 navBar.appendChild(burgerMenu); //burgermenuen er child til nav
+
+/* html > body > header > nav > div */
+//a har 2 child elementer
+
+//div
+const myIcon = document.createElement("div"); //genererer span (div)
+myIcon.setAttribute("id", "nav_icon"); //div får attribut id="nav_icon"
+myIcon.setAttribute("onclick", "window.location.href='index.html';"); //div får attribut onclick="window.location.href='index.html';"
+myLogo.appendChild(myIcon); //div er child til logoet
+
+//a
+const myText = document.createElement("a"); //genererer a (navn)
+myText.setAttribute("href", "index.html"); //logoet får attribut href="index.html"
+myText.setAttribute("id", "nav_text"); //logoet får attribut id="nav_logo"
+myText.textContent = "Claus Kastenskov"; //tekst
+myLogo.appendChild(myText); //a er child til logoet
 
 /* html > body > header > nav > ul */
 //ul har 4 child elementer

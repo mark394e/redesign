@@ -21,12 +21,12 @@
 }
 
 h1,
-#nav_logo {
+#nav_text {
   font-family: utopia-std, serif;
   font-weight: 400;
   font-style: normal;
   color: white;
-  font-size: clamp(3rem, 2.47rem + 2vw, 4rem);
+  font-size: clamp(2.5rem, 2rem + 2vw, 4rem);
 }
 
 h2 {
@@ -141,8 +141,23 @@ header {
 }
 
 #nav_logo {
-  text-decoration: none;
   margin: auto;
+  display: flex;
+  justify-content: center;
+}
+
+#nav_text {
+  text-decoration: none;
+}
+
+#nav_icon {
+  aspect-ratio: 1/1;
+  width: clamp(48px, 2.5rem + 2vw, 64px);
+  background-image: url("../ikon.svg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
 }
 
 .nav_link {
