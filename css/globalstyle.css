@@ -166,7 +166,7 @@ header {
 }
 
 .nav_link:hover {
-  color: var(--color-3);
+  color: #f0f0ff;
 }
 
 /* #endregion header */
