@@ -103,15 +103,6 @@ img,
   color: white;
 }
 
-/*.container {
-  display: grid;
-  margin: 0px;
-  padding: 0px;
-  width: 100%;
-  background-size: cover;
-  text-align: center;
-}*/
-
 .content {
   margin-top: 10px;
 }
@@ -187,13 +178,26 @@ button:hover {
 }
 
 /*___Third section___*/
-#third_section .container {
+#third_section {
   margin-top: 20px;
+  margin-bottom: 80px;
   border-top: 1.5px solid #aeccf2;
+  place-items: center;
 }
 
-#third_section .container {
-  text-align: center;
+#third_section .film {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+}
+
+/*Gøre video responsive*/
+#third_section .film video {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
 }
 
 /*___TABLET/WEB version___*/
