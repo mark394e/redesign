@@ -27,7 +27,32 @@ p {
   font-size: 1rem;
 }
 
+main {
+  /* overskriver globalstyle.css */
+  padding-inline: 0;
+  display: block;
+}
+
+main > *:not(#first_section) {
+  /* rykker reglerne ned fra main til alle sections bortset fra #first_section */
+  padding-inline: clamp(12px, 6px + 1.5vw, 24px);
+  display: grid;
+  grid-template-columns: auto minmax(0, 1200px) auto;
+}
+
+main > *:not(#first_section) > * {
+  grid-column: 2/3;
+}
+
 /*___First section___*/
+
+#first_section {
+  grid-column: 1/4;
+}
+
+#splashbillede {
+  max-height: 850px;
+}
 
 .container {
   display: grid;
@@ -99,16 +124,29 @@ button:hover {
 }
 
 /*___Second section___*/
+
 .section_wrapper {
   margin-bottom: 50px;
   margin-top: 20px;
-  border-top: 3px solid #aeccf2;
+  border-top: 1.5px solid #aeccf2;
+}
+
+.column_1 h3 {
+  text-align: center;
+}
+
+.column_1 img {
+  border-radius: 50%;
+}
+
+.column_4 img {
+  border-radius: 50%;
 }
 
 /*___Third section___*/
 #third_section .container {
   margin-top: 20px;
-  border-top: 3px solid #aeccf2;
+  border-top: 1.5px solid #aeccf2;
 }
 
 #third_section .container {
@@ -143,6 +181,7 @@ button:hover {
 
   .content {
     background: rgba(128, 128, 125, 0.7);
+    border: 2px solid #f2f2f2;
     margin-top: 30px;
     padding: 20px;
   }
@@ -180,10 +219,10 @@ button:hover {
     margin-top: 0;
   }
 
-  .column_4 img {
+  /*.column_4 img {
     width: 300px;
     height: auto;
-  }
+  }*/
 
   /*____Third section____*/
 }
