@@ -43,12 +43,12 @@ input[type="email"] {
 }
 
 input[type="radio"] {
-  transform: scale(150%) translateY(-1px);
+  transform: scale(1.5) translateY(-1px);
   margin-right: 0.5rem;
 }
 
 input[type="checkbox"] {
-  transform: scale(150%) translateY(-1px);
+  transform: scale(1.5) translateY(-1px);
   margin-right: 0.5rem;
 }
 
